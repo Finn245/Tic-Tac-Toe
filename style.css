@@ -1,0 +1,72 @@
+@font-face {
+    font-family: 'LightText';
+    src: url("./Roboto/Roboto-Light.ttf");
+}
+
+:root{
+    --text-font: 'LightText', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: #f3f3f3;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    flex-direction: column;
+    gap: 20px ;
+}
+
+header{
+    background-color: #3b82f6;
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 10%;
+    padding: 30px;
+}
+
+h1 {
+    font-size: 2em; 
+    color: #ccfbf1;
+    margin-bottom: 10px; 
+    font-family: var(--text-font);
+  }
+
+.Gameboard {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(3,1fr);
+    gap: 10px black ; 
+    height: 40%;
+    width: 40%;
+  }
+  
+
+.Gameboard div {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid #0a0a0a;
+    font-size: 1.2em;
+  }
+
+
+  button {
+    border-radius: 5px;
+    background-color: #3b82f6;
+    color: #f3f3f3;
+    padding: 10px 20px; 
+    border: none; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+  }
+  
+  button:hover {
+    color: #2563eb; 
+    background-color:  #d4d4d8 ;
+    
+  }
+  
